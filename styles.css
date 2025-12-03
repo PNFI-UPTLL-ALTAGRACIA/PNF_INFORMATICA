@@ -1,0 +1,56 @@
+/* Importamos una fuente similar a Arial Black con un toque moderno */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/* ESTILO FUTURISTA 2025 */
+:root {
+    --color-fondo: #00008B; /* Azul Rey Oscuro */
+    --color-texto-principal: #D3D3D3; /* Gris Medio Claro */
+    --color-interactivo: #00FFFF; /* Cian, para toques futuristas */
+    --fuente-principal: 'Oswald', 'Arial Black', sans-serif;
+}
+
+/* Fondo y Fuente General */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezados y títulos */
+h1, h2 {
+    color: var(--color-interactivo); /* Un toque de neón */
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5); /* Difuminación neón sutil */
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el logo */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* Ajusta este tamaño */
+    height: auto;
+    /* Aplicamos la difuminación y el movimiento */
+    animation: glow-pulse 3s infinite alternate;
+}
+
+/* Animación de Difuminación Futurista para el Logo */
+@keyframes glow-pulse {
+    from {
+        box-shadow: 0 0 5px var(--color-interactivo);
+        opacity: 0.8;
+    }
+    to {
+        box-shadow: 0 0 20px var(--color-interactivo), 0 0 30px var(--color-interactivo);
+        opacity: 1;
+    }
+}
